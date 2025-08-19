@@ -1,0 +1,13 @@
+C:\Users\yasmi\OneDrive\Documenten\OOAD\OOAD-YasmineBouhaoula-2324\SlnProject\CLFitness\bin\Debug\net8.0\CLFitness.deps.json
+C:\Users\yasmi\OneDrive\Documenten\OOAD\OOAD-YasmineBouhaoula-2324\SlnProject\CLFitness\bin\Debug\net8.0\CLFitness.dll
+C:\Users\yasmi\OneDrive\Documenten\OOAD\OOAD-YasmineBouhaoula-2324\SlnProject\CLFitness\bin\Debug\net8.0\CLFitness.pdb
+C:\Users\yasmi\OneDrive\Documenten\OOAD\OOAD-YasmineBouhaoula-2324\SlnProject\CLFitness\obj\Debug\net8.0\CLFitness.csproj.AssemblyReference.cache
+C:\Users\yasmi\OneDrive\Documenten\OOAD\OOAD-YasmineBouhaoula-2324\SlnProject\CLFitness\obj\Debug\net8.0\CLFitness.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\yasmi\OneDrive\Documenten\OOAD\OOAD-YasmineBouhaoula-2324\SlnProject\CLFitness\obj\Debug\net8.0\CLFitness.AssemblyInfoInputs.cache
+C:\Users\yasmi\OneDrive\Documenten\OOAD\OOAD-YasmineBouhaoula-2324\SlnProject\CLFitness\obj\Debug\net8.0\CLFitness.AssemblyInfo.cs
+C:\Users\yasmi\OneDrive\Documenten\OOAD\OOAD-YasmineBouhaoula-2324\SlnProject\CLFitness\obj\Debug\net8.0\CLFitness.csproj.CoreCompileInputs.cache
+C:\Users\yasmi\OneDrive\Documenten\OOAD\OOAD-YasmineBouhaoula-2324\SlnProject\CLFitness\obj\Debug\net8.0\CLFitness.sourcelink.json
+C:\Users\yasmi\OneDrive\Documenten\OOAD\OOAD-YasmineBouhaoula-2324\SlnProject\CLFitness\obj\Debug\net8.0\CLFitness.dll
+C:\Users\yasmi\OneDrive\Documenten\OOAD\OOAD-YasmineBouhaoula-2324\SlnProject\CLFitness\obj\Debug\net8.0\refint\CLFitness.dll
+C:\Users\yasmi\OneDrive\Documenten\OOAD\OOAD-YasmineBouhaoula-2324\SlnProject\CLFitness\obj\Debug\net8.0\CLFitness.pdb
+C:\Users\yasmi\OneDrive\Documenten\OOAD\OOAD-YasmineBouhaoula-2324\SlnProject\CLFitness\obj\Debug\net8.0\ref\CLFitness.dll

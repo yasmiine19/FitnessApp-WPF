@@ -1,0 +1,49 @@
+﻿<Page x:Class="WpfCustomer.WorkoutsVerwijderPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+      mc:Ignorable="d"
+      d:DesignHeight="450"
+      d:DesignWidth="800"
+      Title="Workouts Verwijderen">
+
+    <Grid Background="White" Margin="20">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="Auto"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+
+        <!-- StackPanel voor workout details -->
+        <StackPanel Grid.Row="0" Grid.Column="1" Margin="10" HorizontalAlignment="Center">
+            <TextBlock x:Name="NameTextBlock" Foreground="#1E90FF"  FontWeight="Bold" FontSize="20" Margin="5" TextAlignment="Center"/>
+            <Image x:Name="WorkoutImage" Width="150" Height="150" Margin="5"/>
+            <TextBlock x:Name="DateTextBlock" FontSize="16" Margin="5" TextAlignment="Center"/>
+            <TextBlock x:Name="DistanceTextBlock" FontSize="16" Margin="5" TextAlignment="Center"/>
+            <TextBlock x:Name="PointsTextBlock" FontSize="16" Margin="5" TextAlignment="Center"/>
+        </StackPanel>
+
+        <!-- StackPanel voor de knoppen -->
+        <StackPanel Grid.Row="2" Grid.Column="1" HorizontalAlignment="Center" Margin="10">
+            <TextBlock Text="Je staat op het punt om de workout te verwijderen." FontWeight="Bold" FontSize="16" Foreground="Black" Margin="5" TextAlignment="Center"/>
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Margin="10">
+                <Button x:Name="DeleteButton" Content="Verwijder Workout" Width="150" Margin="5" Background="#1E90FF" Foreground="White" BorderBrush="DarkBlue" BorderThickness="2" Click="DeleteButton_Click">
+                    <Button.Effect>
+                        <DropShadowEffect ShadowDepth="5" BlurRadius="5" Opacity="2" Color="Black" Direction="320"/>
+                    </Button.Effect>
+                </Button>
+                <Button x:Name="CancelButton" Content="Annuleren" Width="150" Margin="5" Background="#87CEEB" Foreground="Black" BorderBrush="DarkBlue" BorderThickness="2" Click="CancelButton_Click">
+                    <Button.Effect>
+                        <DropShadowEffect ShadowDepth="5" BlurRadius="5" Opacity="2" Color="Black" Direction="320"/>
+                    </Button.Effect>
+                </Button>
+            </StackPanel>
+        </StackPanel>
+    </Grid>
+</Page>

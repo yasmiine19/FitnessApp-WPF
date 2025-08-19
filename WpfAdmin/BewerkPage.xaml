@@ -1,0 +1,66 @@
+﻿<Page x:Class="WpfAdmin.BewerkPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+      mc:Ignorable="d"
+      d:DesignHeight="600" d:DesignWidth="900"
+      Title="BewerkPage">
+
+    <Grid Background="white">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="1*" />
+            <ColumnDefinition Width="2*" />
+            <ColumnDefinition Width="1*" />
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+
+        <Label Content="Voornaam: " Grid.Row="0" Grid.Column="0" VerticalAlignment="Center"/>
+        <TextBox x:Name="FirstNameTextBox" Grid.Row="0" Grid.Column="1" Margin="0,0,10,10" Padding="5"/>
+
+        <Label Content="Achternaam: " Grid.Row="1" Grid.Column="0" VerticalAlignment="Center"/>
+        <TextBox x:Name="LastNameTextBox" Grid.Row="1" Grid.Column="1" Margin="0,0,10,10" Padding="5"/>
+
+        <Label Content="Login: " Grid.Row="2" Grid.Column="0" VerticalAlignment="Center"/>
+        <TextBox x:Name="LoginTextBox" Grid.Row="2" Grid.Column="1" Margin="0,0,10,10" Padding="5"/>
+
+        <Label Content="Paswoord: " Grid.Row="3" Grid.Column="0" VerticalAlignment="Center"/>
+        <PasswordBox x:Name="PasswordBox" Grid.Row="3" Grid.Column="1" Margin="0,0,10,0" Padding="5"/>
+        <TextBlock Text="Laat leeg indien ongewijzigd!" Grid.Row="3" Grid.Column="2" VerticalAlignment="Center" Foreground="Gray" Margin="0,0,10,0"/>
+
+        <CheckBox Content="is admin" x:Name="IsAdminCheckBox" Grid.Row="4" Grid.Column="1" VerticalAlignment="Center" Margin="0,0,0,10"/>
+
+        <Image x:Name="ProfilePhotoImage" Width="200" Height="200" Grid.Row="5" Grid.Column="1" Margin="0,10,0,10"/>
+        <Button Content="Kies..." Background="#87CEFA" Foreground="Black" BorderBrush="Black"  Grid.Row="6" Grid.Column="1" Width="75" HorizontalAlignment="Left" Margin="0,0,10,10" Click="ChoosePhotoButton_Click">
+            <Button.Effect>
+                <DropShadowEffect ShadowDepth="5" BlurRadius="5" Opacity="2" Color="Black" Direction="320"/>
+            </Button.Effect>
+        </Button>
+
+        <TextBlock x:Name="ErrorMessageTextBlock" Text="Vul alle verplichte velden in!" Foreground="Red" Visibility="Collapsed" Grid.Row="7" Grid.Column="1" Margin="0,10,0,10"/>
+
+        <StackPanel Orientation="Horizontal" Grid.Row="8" Grid.Column="1" HorizontalAlignment="Right">
+            <Button x:Name="SaveButton" Content="Opslaan" Height="30" Width="75" Margin="5" Background="#87CEFA" Foreground="Black" BorderBrush="Black" Click="SaveButton_Click">
+                <Button.Effect>
+                    <DropShadowEffect ShadowDepth="5" BlurRadius="5" Opacity="2" Color="Black" Direction="320"/>
+                </Button.Effect>
+            </Button>
+            <Button x:Name="CancelButton" Content="Annuleren" Height="30" Width="75" Margin="5" Background="#87CEFA" Foreground="Black" BorderBrush="Black" Click="CancelButton_Click">
+                <Button.Effect>
+                    <DropShadowEffect ShadowDepth="5" BlurRadius="5" Opacity="2" Color="Black" Direction="320"/>
+                </Button.Effect>
+            </Button>
+        </StackPanel>
+    </Grid>
+</Page>
+
+    

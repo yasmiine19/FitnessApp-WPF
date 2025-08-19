@@ -1,0 +1,37 @@
+﻿<Page x:Class="WpfCustomer.WorkoutsAddPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+      mc:Ignorable="d"
+      d:DesignHeight="450"
+      d:DesignWidth="800"
+      Title="Workout Toevoegen">
+
+    <Grid Background="White">
+        <StackPanel Margin="10">
+            <TextBlock Text="Workout Toevoegen" FontWeight="Bold" FontSize="16" Margin="10" Foreground="#1E90FF"/>
+            <TextBlock Text="Datum:" Margin="5"/>
+            <DatePicker x:Name="WorkoutDatePicker" Margin="5"/>
+            <TextBlock Text="Afstand (km):" Margin="5"/>
+            <TextBox x:Name="DistanceTextBox" Margin="5"/>
+            <TextBlock Text="Oefening:" Margin="5"/>
+            <ComboBox x:Name="ExerciseComboBox" SelectionChanged="ExerciseComboBox_SelectionChanged" Margin="5"/>
+            <TextBlock Text="Afbeelding:" Margin="5"/>
+            <Image x:Name="WorkoutImage" Width="100" Height="100" Margin="5"/>
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Right" Margin="10">
+                <Button x:Name="SaveButton" Content="Opslaan" Width="75" Margin="5" Background="#1E90FF" Foreground="White" BorderBrush="DarkBlue" BorderThickness="2" Click="SaveButton_Click">
+                    <Button.Effect>
+                        <DropShadowEffect ShadowDepth="5" BlurRadius="5" Opacity="0.5"/>
+                    </Button.Effect>
+                </Button>
+                <Button x:Name="CancelButton" Content="Annuleren" Width="75" Margin="5" Background="#1E90FF" Foreground="White" BorderBrush="DarkBlue" BorderThickness="2" Click="CancelButton_Click">
+                    <Button.Effect>
+                        <DropShadowEffect ShadowDepth="5" BlurRadius="5" Opacity="0.5"/>
+                    </Button.Effect>
+                </Button>
+            </StackPanel>
+            <TextBlock x:Name="ErrorTextBlock" Foreground="Red" Margin="5" Visibility="Collapsed"/>
+        </StackPanel>
+    </Grid>
+</Page>
